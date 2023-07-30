@@ -13,15 +13,17 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import close from "../Images/IconButton.png";
 import rectangle from "../Images/Rectangle 51.png";
+import { useNavigate } from "react-router-dom";
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+  const navigate = useNavigate();
 
   const pages = [
-    { name: "Services" },
-    { name: "About us" },
-    { name: "Blogs" },
-    { name: "Contact us" },
+    { name: "Services",link:'/services'},
+    { name: "About us",link:'/about' },
+    { name: "Blogs",link:'/blogs' },
+    { name: "Contact us",link:'/contact' },
   ];
   return (
     <>
@@ -73,13 +75,14 @@ const DrawerComp = () => {
                   <ListItemText
                     sx={{ color: "white", margin: 2, fontSize: 50 }}
                   >
-                    <Typography variant="h2">{page.name}</Typography>
+                    <Typography onClick={()=>navigate(page.link)} variant="h2">{page.name}</Typography>
                   </ListItemText>
                 </ListItemIcon>
               </ListItemButton>
             ))}
           </List>
           <Button
+          onClick={()=>navigate('/audit')}
             variant="contained"
             size="large"
             sx={{ backgroundColor: "#FF6E6C", margin: 5, borderRadius: 2 }}
