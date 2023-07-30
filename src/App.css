@@ -1,38 +1,200 @@
-.App {
+.rectangle {
+  height: "44px";
+  width: "44px";
+  background-color: "#301E4E";
+}
+
+figcaption {
+  margin-top: 2px;
   text-align: center;
+  font-size: 2rem;
+  color: #63517f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-width: 1084px) {
+  #ellipse {
+    height: 550px;
+    width: 550px;
+  }
+  #heroText1 {
+    display: none;
+  }
+  .hero {
+    height: 100%;
+    width: 100%;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  #testimonial {
+    height: 100px;
+    width: 100px;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    gap: 0;
+  }
+  figcaption {
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 695px) {
+  img {
+    height: 30px;
+    width: 30px;
+    gap: 0;
   }
-  to {
-    transform: rotate(360deg);
+  figcaption {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 975px) {
+  #ellipse {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 520px) {
+  img {
+    height: 20px;
+    width: 20px;
+  }
+  figcaption {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+ 
+  .nav {
+    display: none;
+  }
+  #PartnerSubtext1 {
+    display: none;
+  }
+  #PartnerSubtext2 {
+    font-size: x-small;
+  }
+  .OurPartnerimagesLargeRow {
+    display: none;
+  }
+
+  .OurPartnerimagesSmallRow {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  img {
+    height: 40px;
+    width: 40px;
+    gap: 0;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 580px) {
+  .OurPartnerimagesSmallRow {
+    display: none;
+  }
+}
+
+@media (min-width: 581px) {
+  #PartnerSubtext2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1084px) {
+  #heroText2 {
+    display: none;
+  }
+}
+
+@media (max-width: 835px) {
+  #ellipse {
+    height: 350px;
+    width: 350px;
+  }
+  .starbucks {
+    height: 350px;
+    width: 300px;
+  }
+  .nike {
+    height: 250px;
+    width: 300px;
+  }
+  .Workimagesrow1 {
+    margin-left: 50px;
+  }
+  .Workimagesrow2 {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 391px) {
+  #ellipse {
+    height: 150px;
+    width: 150px;
+  }
+  .LargeScreen {
+    display: none;
+  }
+  .starbucksMobile {
+    height: 300px;
+    width: 350px;
+  }
+  .nikeMobile {
+    height: 300px;
+    width: 350px;
+  }
+  .LargeAndMediumOurWork {
+    display: none;
+  }
+  .smallDevicesOurWork {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 391px) {
+  .mobileScreen {
+    display: none;
+  }
+  .smallDevicesOurWork {
+    display: none;
+  }
+  .rectangle {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  #heroText2 {
+    display: none;
+  }
+}
+@media (min-width: 620px) {
+  #heroText3 {
+    display: none;
+  }
+}
+
+
+@media(max-width:670px){
+  .starbucks {
+    height: 150px;
+    width: 100px;
+  }
+  .nike {
+    height: 100px;
+    width: 150px;
+  }
+
+}
+@media(max-width:560px){
+  #ellipse{
+height: 250px;
+width:250px;
   }
 }
